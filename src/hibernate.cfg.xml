@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://xavi-glitter.cyzmghhsdh20.us-west-1.rds.amazonaws.com:3306/xspace</property>
+		<property name="connection.username">xaviwang</property>
+		<property name="connection.password">xaviwang</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="jdbc.fetch_size">50</property> 
+		<property name="jdbc.batch_size">30</property>
+		<property name="maxIdle">100</property> 
+		<property name="maxActive">100</property>
+		<mapping resource="keyword.hbm.xml"/>
+		<mapping resource="userdailykeywords.hbm.xml"/>
+		<mapping resource="story.hbm.xml"/>
+		<mapping resource="photo.hbm.xml"/>
+		<mapping resource="location.hbm.xml"/>
+		<mapping resource="publicness.hbm.xml"/>
+		<mapping resource="user.hbm.xml"/>
+		<mapping resource="buykeyword.hbm.xml"/>
+		<mapping resource="comment.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>

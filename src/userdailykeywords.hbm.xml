@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="keyword.bean.UserDailyKeywords" table="USER_DAILY_KEYWORDS">
+		<id name="id" column="ID">
+			<generator class="native" /> 
+		</id>
+		<property name="userId" column="UID"></property>
+		<property name="wordId" column="KID"></property>
+		<property name="locationId" column="LID"></property>
+		<property name="date" column="DATE"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="keyword.bean.BuyKeyword" table="KEYWORD_BUY">
+		<id name="id" column="ID">
+			<generator class="native" /> 
+		</id>
+		<property name="userDailyKeywordId" column="UDKID"></property>
+		<property name="userId" column="UID"></property>
+	</class>
+</hibernate-mapping>
